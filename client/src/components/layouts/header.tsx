@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 import { ModeToggle } from "../theme/toggle";
 
 
-export default function Header() {
+export default function ShopHeader() {
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50 dark:bg-black">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
@@ -18,9 +18,9 @@ export default function Header() {
 
         {/* Navigation */}
         <nav className="hidden md:flex gap-8 text-base font-medium">
-          <Link href="/shop/products" className="hover:text-primary transition-colors">Shop</Link>
-          <Link href="/seller/home" className="hover:text-primary transition-colors">Sell</Link>
-          <Link href="/admin/home" className="hover:text-primary transition-colors">Admin</Link>
+          <Link href="/shop/products" className="hover:text-primary transition-colors">products</Link>
+          <Link href="/seller/home" className="hover:text-primary transition-colors">map</Link>
+          <Link href="/admin/home" className="hover:text-primary transition-colors">orders</Link>
         </nav>
 
         {/* Actions */}
